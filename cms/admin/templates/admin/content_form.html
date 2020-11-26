@@ -14,13 +14,13 @@
         <div class="field">
           <label class="label">Title</label>
           <div class="control">
-              <input type="text" name="title" class="input">
+              <input type="text" name="title" class="input" value="{{  item_title|default('') }}">
           </div>
         </div>
         <div class="field">
           <label class="label">Slug</label>
           <div class="control">
-              <input type="text" name="slug" class="input">
+              <input type="text" name="slug" class="input" value="{{  slug|default('') }}">
           </div>
         </div>
         <div class="field">
@@ -38,7 +38,7 @@
         <div class="field">
           <label class="label">Content</label>
           <div class="control">
-              <textarea name="body" id="body" cols="30" rows="10" class="textarea"></textarea>
+              <textarea name="body" id="body" cols="30" rows="10" class="textarea" content="{{  body|default('') }}"></textarea>
           </div>
         </div>
         <div class="field is-grouped">
